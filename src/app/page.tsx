@@ -43,10 +43,11 @@ export default function Home() {
         <ResizablePanel minSize={minSize}>
           <div className="flex-1 dark flex flex-col">
             <div className="bg-background">
-              <Tabs defaultValue="css" className="w-fit p-2">
-                <TabsList className="grid w-full grid-cols-2">
-                  <TabsTrigger value="css">index.css</TabsTrigger>
-                  <TabsTrigger value="view">view</TabsTrigger>
+              <Tabs defaultValue="view" className="w-fit p-2">
+                <TabsList className="grid w-full grid-cols-3 font-medium">
+                  <TabsTrigger value="html">HTML</TabsTrigger>
+                  <TabsTrigger value="css">CSS</TabsTrigger>
+                  <TabsTrigger value="view">View</TabsTrigger>
                 </TabsList>
               </Tabs>
             </div>
