@@ -3,6 +3,7 @@
 import { useEffect } from 'react';
 import { editor } from 'monaco-editor';
 import Editor, { loader } from '@monaco-editor/react';
+import Loading from './loading';
 
 // Shadcn UI
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -37,7 +38,7 @@ export default function Home() {
     <main className="flex min-h-screen">
       <ResizablePanelGroup direction="horizontal">
         <ResizablePanel minSize={minSize}>
-          <div className="flex-1 bg-gray-200">Left Content</div>
+          <div className="flex-1 p-2"></div>
         </ResizablePanel>
         <ResizableHandle withHandle />
         <ResizablePanel minSize={minSize}>
@@ -57,6 +58,7 @@ export default function Home() {
               options={options}
               height="100dvh"
               width="100%"
+              loading={<Loading />}
             />
           </div>
         </ResizablePanel>
