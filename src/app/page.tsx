@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen">
       <div className="flex-1 bg-gray-200">Left Content</div>
-      <div className="flex-1 dark">
+      <div className="flex-1 dark flex flex-col">
         <div className="bg-background">
           <Tabs defaultValue="css" className="w-fit p-2">
             <TabsList className="grid w-full grid-cols-2">
