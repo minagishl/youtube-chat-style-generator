@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { editor } from 'monaco-editor';
 import Editor, { loader } from '@monaco-editor/react';
 import Loading from './loading';
+import { H2, P } from '@/components/typography';
 
 // Shadcn UI
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
@@ -33,7 +34,13 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen">
-      <div className="flex-1 p-2"></div>
+      <div className="flex-1 p-4">
+        <H2>YouTube Chat Style Generator</H2>
+        <P>
+          YouTube Live + OBS is a tool to generate CSS used for streaming while
+          showing chat on YouTube Live + OBS.
+        </P>
+      </div>
       <div className="flex-1 dark flex flex-col h-screen">
         <div className="bg-background flex flex-col h-full">
           <Tabs defaultValue="view" className="w-full p-2 h-full flex flex-col">
