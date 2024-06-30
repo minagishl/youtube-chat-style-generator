@@ -36,33 +36,26 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen">
-      <ResizablePanelGroup direction="horizontal">
-        <ResizablePanel minSize={minSize}>
-          <div className="flex-1 p-2"></div>
-        </ResizablePanel>
-        <ResizableHandle withHandle />
-        <ResizablePanel minSize={minSize}>
-          <div className="flex-1 dark flex flex-col">
-            <div className="bg-background">
-              <Tabs defaultValue="view" className="w-fit p-2">
-                <TabsList className="grid w-full grid-cols-3 font-medium">
-                  <TabsTrigger value="html">HTML</TabsTrigger>
-                  <TabsTrigger value="css">CSS</TabsTrigger>
-                  <TabsTrigger value="view">View</TabsTrigger>
-                </TabsList>
-              </Tabs>
-            </div>
-            <Editor
-              defaultLanguage="css"
-              theme="custom"
-              options={options}
-              height="100dvh"
-              width="100%"
-              loading={<Loading />}
-            />
-          </div>
-        </ResizablePanel>
-      </ResizablePanelGroup>
+      <div className="flex-1 p-2"></div>
+      <div className="flex-1 dark flex flex-col">
+        <div className="bg-background">
+          <Tabs defaultValue="view" className="w-fit p-2">
+            <TabsList className="grid w-full grid-cols-3 font-medium">
+              <TabsTrigger value="html">HTML</TabsTrigger>
+              <TabsTrigger value="css">CSS</TabsTrigger>
+              <TabsTrigger value="view">View</TabsTrigger>
+            </TabsList>
+          </Tabs>
+        </div>
+        <Editor
+          defaultLanguage="css"
+          theme="custom"
+          options={options}
+          height="100%"
+          width="100%"
+          loading={<Loading />}
+        />
+      </div>
     </main>
   );
 }
