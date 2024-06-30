@@ -4,10 +4,18 @@ import { useEffect, useState } from 'react';
 import { editor } from 'monaco-editor';
 import Editor, { loader } from '@monaco-editor/react';
 import Loading from './loading';
-import { H2, P } from '@/components/typography';
+import { H2, H3, P } from '@/components/typography';
 
 // Shadcn UI
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
+import { Input } from '@/components/ui/input';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 
 const options: editor.IEditorOptions = {
   readOnly: false,
@@ -40,6 +48,11 @@ export default function Home() {
           YouTube Live + OBS is a tool to generate CSS used for streaming while
           showing chat on YouTube Live + OBS.
         </P>
+        <H3>Fonts</H3>
+        <div className="flex items-center">
+          <P className="w-1/3">Specify font name manually</P>
+          <Input type="text" className="w-1/3 h-8" />
+        </div>
       </div>
       <div className="h-screen w-1/2 dark flex flex-col">
         <div className="bg-background flex flex-col h-full">
