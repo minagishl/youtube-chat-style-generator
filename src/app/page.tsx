@@ -34,14 +34,14 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen">
-      <div className="flex-1 p-4">
+      <div className="h-full w-1/2 p-4">
         <H2>YouTube Chat Style Generator</H2>
         <P>
           YouTube Live + OBS is a tool to generate CSS used for streaming while
           showing chat on YouTube Live + OBS.
         </P>
       </div>
-      <div className="flex-1 dark flex flex-col h-screen">
+      <div className="h-screen w-1/2 dark flex flex-col">
         <div className="bg-background flex flex-col h-full">
           <Tabs defaultValue="view" className="w-full p-2 h-full flex flex-col">
             <TabsList className="grid w-fit grid-cols-3 font-medium">
