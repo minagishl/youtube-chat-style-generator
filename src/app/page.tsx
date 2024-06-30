@@ -7,11 +7,6 @@ import Loading from './loading';
 
 // Shadcn UI
 import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import {
-  ResizableHandle,
-  ResizablePanel,
-  ResizablePanelGroup,
-} from '@/components/ui/resizable';
 
 const options: editor.IEditorOptions = {
   readOnly: false,
